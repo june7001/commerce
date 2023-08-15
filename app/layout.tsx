@@ -1,5 +1,5 @@
 import Navbar from 'components/layout/navbar';
-import { Inter } from 'next/font/google';
+import { Inter, Petrona } from 'next/font/google';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
 
@@ -33,10 +33,15 @@ const inter = Inter({
   display: 'swap',
   variable: '--font-inter'
 });
+const petrona = Petrona({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-petrona'
+});
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${petrona.variable}`}>
       <body>
         <Navbar />
         <Suspense>

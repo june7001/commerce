@@ -13,12 +13,12 @@ export default function Hero() {
       ></video>
       <Navbar />
       <Link href="search/blommor">
-        <div className="font-petrona absolute inset-0 flex h-full w-1/2 items-center justify-center text-5xl text-white">
+        <div className="absolute inset-0 flex h-full w-1/2 items-center justify-center font-serif text-5xl text-white">
           Blommor
         </div>
       </Link>
       <Link href="search/gront">
-        <div className="font-petrona absolute inset-0 left-1/2 flex h-full w-1/2 items-center justify-center text-5xl text-white">
+        <div className="absolute inset-0 left-1/2 flex h-full w-1/2 items-center justify-center font-serif text-5xl text-white">
           Grönt
         </div>
       </Link>
