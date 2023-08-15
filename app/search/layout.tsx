@@ -1,3 +1,4 @@
+import LogoIcon from 'components/icons/logo';
 import Footer from 'components/layout/footer';
 import Collections from 'components/layout/search/collections';
 import FilterList from 'components/layout/search/filter';
@@ -16,6 +17,7 @@ export default function SearchLayout({ children }: { children: React.ReactNode }
           <FilterList list={sorting} title="Sort by" />
         </div>
       </div>
+      <LogoIcon width={251} height={28} fill="#000" />
       <Footer />
     </Suspense>
   );
