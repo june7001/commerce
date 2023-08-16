@@ -1,3 +1,4 @@
+import Banner from 'components/banner';
 import Navbar from 'components/layout/navbar';
 import { Inter, Petrona } from 'next/font/google';
 import { ReactNode, Suspense } from 'react';
@@ -43,6 +44,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${petrona.variable}`}>
       <body>
+        <Banner />
         <Navbar />
         <Suspense>
           <main>{children}</main>
