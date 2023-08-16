@@ -32,11 +32,11 @@ export default function Search() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="w-max-[550px] relative w-full lg:w-80 xl:w-full">
+    <form onSubmit={onSubmit} className="w-max-[550px] relative w-full md:w-44 lg:w-56">
       <input
         type="text"
         name="search"
-        placeholder="Search for products..."
+        placeholder="Search..."
         autoComplete="off"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
