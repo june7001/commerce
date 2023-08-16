@@ -1,5 +1,3 @@
-import { Carousel } from 'components/carousel';
-
 import Hero from 'components/hero';
 import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
@@ -17,9 +15,7 @@ export default async function HomePage() {
   return (
     <>
       <Hero />
-
       <Suspense>
-        <Carousel />
         <Suspense>
           <Footer />
         </Suspense>
