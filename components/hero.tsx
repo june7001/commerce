@@ -11,16 +11,20 @@ export default function Hero() {
         src="/hero.mp4"
       ></video>
 
-      <Link href="search/blommor">
-        <div className="absolute inset-0 flex h-full w-1/2 items-center justify-center font-serif text-5xl text-white">
+      <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center space-y-4 md:flex-row md:space-x-28 md:space-y-0">
+        <Link
+          href="search/blommor"
+          className="w-36 bg-white px-4 py-2 text-center font-serif font-light italic"
+        >
           Blommor
-        </div>
-      </Link>
-      <Link href="search/gront">
-        <div className="absolute inset-0 left-1/2 flex h-full w-1/2 items-center justify-center font-serif text-5xl text-white">
+        </Link>
+        <Link
+          href="search/blommor"
+          className="w-36 bg-white px-4 py-2 text-center font-serif font-light italic"
+        >
           Grönt
-        </div>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 }
