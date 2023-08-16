@@ -12,7 +12,7 @@ export default async function Navbar() {
   const menu = await getMenu('collections-menu');
 
   return (
-    <nav className="fixed z-10 flex w-full items-center justify-between p-4 lg:px-6">
+    <nav className="sticky top-0 z-10 flex w-full items-center justify-between bg-white p-4 lg:px-6">
       <div className="block flex-none md:hidden">
         <MobileMenu menu={menu} />
       </div>
