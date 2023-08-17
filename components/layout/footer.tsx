@@ -4,20 +4,17 @@ import FooterMenu from 'components/layout/footer-menu';
 import { getMenu } from 'lib/shopify';
 import { Suspense } from 'react';
 
-const { COMPANY_NAME, SITE_NAME } = process.env;
+const { SITE_NAME } = process.env;
 
 export default async function Footer() {
-  const currentYear = new Date().getFullYear();
-  const copyrightDate = 2023 + (currentYear > 2023 ? `-${currentYear}` : '');
   const skeleton = 'w-full h-6 animate-pulse rounded bg-neutral-200';
-  const menu = await getMenu('next-js-frontend-footer-menu');
-  const copyrightName = COMPANY_NAME || SITE_NAME || '';
+  const menu = await getMenu('footer');
 
   return (
     <footer className="text-sm text-neutral-500">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 border-t border-neutral-200 px-6 py-12 text-sm md:flex-row md:gap-12 md:px-4 xl:px-0">
         <div>
-          <Link className="flex items-center gap-2 text-black md:pt-1" href="/">
+          <Link className="flex items-center gap-2 text-black md:pt-1" href="https://june.contact">
             <span className="uppercase">{SITE_NAME}</span>
           </Link>
         </div>
@@ -35,32 +32,14 @@ export default async function Footer() {
         >
           <FooterMenu menu={menu} />
         </Suspense>
-        <div className="md:ml-auto">
+        <div className="mr-10 underline-offset-4 hover:text-black hover:underline md:ml-auto">
           <a
-            className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black"
-            aria-label="Deploy on Vercel"
-            href="https://vercel.com/templates/next.js/nextjs-commerce"
+            href="https://www.instagram.com/june.contact/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="px-3">▲</span>
-            <hr className="h-full border-r border-neutral-200" />
-            <span className="px-3">Deploy</span>
+            Instagram
           </a>
-        </div>
-      </div>
-      <div className="border-t border-neutral-200 py-6 text-sm ">
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-1 px-4 md:flex-row md:gap-0 md:px-4 xl:px-0">
-          <p>
-            &copy; {copyrightDate} {copyrightName}
-            {copyrightName.length && !copyrightName.endsWith('.') ? '.' : ''} All rights reserved.
-          </p>
-          <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
-          <p>Designed in California</p>
-          <p className="md:ml-auto">
-            Crafted by{' '}
-            <a href="https://vercel.com" className="text-black ">
-              ▲ Vercel
-            </a>
-          </p>
         </div>
       </div>
     </footer>
