@@ -113,9 +113,9 @@ async function RelatedProducts({ id }: { id: string }) {
   if (!relatedProducts.length) return null;
 
   return (
-    <div className="py-8">
+    <div className="overscroll-contain py-8">
       <h2 className="mb-4 text-2xl font-bold">Related Products</h2>
-      <ul className="flex w-full gap-4 overflow-x-visible pt-1">
+      <ul className="flex w-full gap-4 overflow-x-scroll pt-1">
         {relatedProducts.map((product) => (
           <li
             key={product.handle}
