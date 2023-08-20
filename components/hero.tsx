@@ -7,7 +7,7 @@ export default function Hero() {
         autoPlay
         muted
         loop
-        className="absolute left-0 top-0 z-0 h-full w-full object-cover"
+        className="relative -top-[77px] left-0 z-0 h-full w-full object-cover"
         src="/hero.mp4"
       ></video>
 
