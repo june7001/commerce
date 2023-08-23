@@ -64,10 +64,10 @@ export function AddToCart({
       </div>
       <span>
         {!selectedVariantId
-          ? 'Please select a variant first'
+          ? 'Vänligen välj en variant'
           : availableForSale
-          ? 'Add To Cart'
-          : 'Out of Stock'}
+          ? 'LÄGG I VARUKORG'
+          : 'SLUT I LAGER'}
       </span>
     </button>
   );

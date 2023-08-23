@@ -66,7 +66,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
           >
             <Dialog.Panel className="xl:1/4 fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-white/80 p-6 text-black backdrop-blur-xl md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-between">
-                <p className="font-serif text-lg">My Cart</p>
+                <p className="font-serif text-lg">Varukorg</p>
 
                 <button aria-label="Close cart" onClick={closeCart}>
                   <CloseCart />
@@ -76,7 +76,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
               {!cart || cart.lines.length === 0 ? (
                 <div className="mt-20 flex w-full flex-col items-center justify-center overflow-hidden">
                   <ShoppingBagIcon className="h-16" />
-                  <p className="mt-6 text-center font-serif text-2xl">Your cart is empty.</p>
+                  <p className="mt-6 text-center font-serif text-2xl">Din varukorg är tom.</p>
                 </div>
               ) : (
                 <div className="flex h-full flex-col justify-between overflow-hidden p-1">
@@ -151,11 +151,11 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
                   </ul>
                   <div className="py-4 text-sm text-neutral-500 ">
                     <div className="mb-3 flex items-center justify-between border-b border-neutral-200 pb-1 pt-1 ">
-                      <p>Shipping</p>
-                      <p className="text-right">Calculated at checkout</p>
+                      <p>Leverans</p>
+                      <p className="text-right">Se pris för leverans i nästa steg</p>
                     </div>
                     <div className="mb-3 flex items-center justify-between border-b border-neutral-200 pb-1 pt-1 ">
-                      <p>Total</p>
+                      <p>Totalt</p>
                       <Price
                         className="text-right text-base text-black"
                         amount={cart.cost.totalAmount.amount}
@@ -167,7 +167,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
                     href={cart.checkoutUrl}
                     className="block w-full bg-black p-3 text-center text-sm font-medium text-white opacity-90 hover:opacity-100"
                   >
-                    Proceed to Checkout
+                    Till kassan
                   </a>
                 </div>
               )}

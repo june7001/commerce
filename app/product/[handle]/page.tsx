@@ -114,7 +114,7 @@ async function RelatedProducts({ id }: { id: string }) {
 
   return (
     <div className="overscroll-contain py-8">
-      <h2 className="mb-4 font-serif text-4xl font-medium">Related Products</h2>
+      <h2 className="mb-4 font-serif text-4xl font-medium">Andra köpte även</h2>
       <ul className="flex w-full gap-4 overflow-x-scroll pt-1">
         {relatedProducts.map((product) => (
           <li key={product.handle} className="max-w-[50vw] flex-none ">

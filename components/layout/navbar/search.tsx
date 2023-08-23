@@ -36,7 +36,7 @@ export default function Search() {
       <input
         type="text"
         name="search"
-        placeholder="Search..."
+        placeholder="Sök..."
         autoComplete="off"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
