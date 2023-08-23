@@ -16,7 +16,7 @@ export function PoemSection() {
             className="object-cover"
           />
         </div>
-        <div className="flex flex-col items-center justify-center p-16 text-center font-serif text-lg font-medium italic md:w-1/2">
+        <div className="flex flex-col items-center justify-center p-16 text-center font-serif font-medium italic md:w-1/2 md:text-lg">
           <p>I wandered lonely as a cloud</p>
           <p>That floats on high o'er vales and hills,</p>
           <p>When all at once I saw a crowd,</p>
@@ -32,7 +32,7 @@ export function PoemSection() {
         </div>
       </div>
       <div className="flex min-h-[40vh] flex-col-reverse pb-16 md:flex-row">
-        <div className="flex flex-col items-center justify-center p-16 text-center font-serif text-lg font-medium italic md:w-1/2">
+        <div className="flex flex-col items-center justify-center p-16 text-center font-serif font-medium italic md:w-1/2 md:text-lg">
           <p>The waves beside them danced; but they</p>
           <p>Out-did the sparkling waves in glee:</p>
           <p>A poet could not but be gay,</p>
