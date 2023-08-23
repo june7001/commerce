@@ -117,10 +117,7 @@ async function RelatedProducts({ id }: { id: string }) {
       <h2 className="mb-4 text-2xl font-bold">Related Products</h2>
       <ul className="flex w-full gap-4 overflow-x-scroll pt-1">
         {relatedProducts.map((product) => (
-          <li
-            key={product.handle}
-            className="max-w-[50vw] flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
-          >
+          <li key={product.handle} className="max-w-[50vw] flex-none ">
             <Link className="relative h-full w-full" href={`/product/${product.handle}`}>
               <GridTileImage
                 alt={product.title}
