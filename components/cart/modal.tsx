@@ -66,7 +66,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
           >
             <Dialog.Panel className="xl:1/4 fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-white/80 p-6 text-black backdrop-blur-xl md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-between">
-                <p className="text-lg font-semibold">My Cart</p>
+                <p className="font-serif text-lg">My Cart</p>
 
                 <button aria-label="Close cart" onClick={closeCart}>
                   <CloseCart />
@@ -76,7 +76,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
               {!cart || cart.lines.length === 0 ? (
                 <div className="mt-20 flex w-full flex-col items-center justify-center overflow-hidden">
                   <ShoppingBagIcon className="h-16" />
-                  <p className="mt-6 text-center text-2xl font-bold">Your cart is empty.</p>
+                  <p className="mt-6 text-center font-serif text-2xl">Your cart is empty.</p>
                 </div>
               ) : (
                 <div className="flex h-full flex-col justify-between overflow-hidden p-1">
