@@ -19,7 +19,7 @@ export default function Hero() {
           Blommor
         </Link>
         <Link
-          href="search/blommor"
+          href="search/gront"
           className="w-36 bg-white px-4 py-2 text-center font-serif font-light italic"
         >
           Grönt
