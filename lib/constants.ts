@@ -17,7 +17,7 @@ export const sorting: SortFilterItem[] = [
   { title: 'Trendande', slug: 'trending-desc', sortKey: 'BEST_SELLING', reverse: false }, // asc
   { title: 'Nyheter', slug: 'latest-desc', sortKey: 'CREATED_AT', reverse: true },
   { title: 'Pris: Lågt till högt', slug: 'price-asc', sortKey: 'PRICE', reverse: false }, // asc
-  { title: 'Price: Högt till lågt', slug: 'price-desc', sortKey: 'PRICE', reverse: true }
+  { title: 'Pris: Högt till lågt', slug: 'price-desc', sortKey: 'PRICE', reverse: true }
 ];
 
 export const TAGS = {
